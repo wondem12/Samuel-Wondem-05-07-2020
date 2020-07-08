@@ -1,0 +1,50 @@
+@import "../../../../variables.scss";
+
+
+.Input {
+  width: 100%;
+  margin: .8rem 1.2rem;
+  font-size: 1.5rem;
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 1.2rem;
+  }
+  .InputElement {
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color:var(--color-white);
+    margin-top: .6rem;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    width: 80%;
+    transition: all 0.8s;
+    box-shadow: var(--shadow-light);
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 0.7rem;
+    }
+ 
+    &:focus {
+      border: 1px solid var(--color-primary-dark);
+      width: 100%;
+      @media only screen and (max-width: $bp-smallest) {
+        width: 90%;
+      }
+    }
+  }
+
+  .AlertDanger {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary-dark);
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    width: 80%;
+  }
+}

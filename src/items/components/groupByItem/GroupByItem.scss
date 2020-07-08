@@ -1,0 +1,13 @@
+.groupByItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  border-bottom: 1px solid var(--color-grey-light-2);
+  padding: 2rem 1.5rem;
+  &__name {
+  }
+  &__price {
+    color: var(--color-primary);
+  }
+}

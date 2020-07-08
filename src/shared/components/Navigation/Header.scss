@@ -1,0 +1,65 @@
+@import "../../../variables.scss";
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-grey-light-2);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-smallest) {
+    justify-content: space-around;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+   
+    &--logo {
+      display: flex;
+      height: 5rem;
+      margin-left: 2rem;
+    }
+  }
+
+  .switch {
+    cursor: pointer;
+    margin-right: 0.8rem;
+    -webkit-tap-highlight-color: transparent;
+    height: 38px;
+    input {
+      display: none;
+      &:checked + .slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+    }
+    .slider {
+      position: relative;
+      display: inline-block;
+      width: 45px;
+      height: 20px;
+      background-color: var(--color-grey-light-2);
+      border-radius: 23px;
+      vertical-align: text-bottom;
+      transition: background-color 0.3s linear;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -2px;
+        width: 20px;
+        height: 20px;
+        background-color: var(--color-primary);
+        border-radius: 11px;
+        box-shadow: var(--shadow-light);
+        transform: translate3d(2px, 2px, 0);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+export const ADD_ITEM = 'ADD_ITEM';
+export const ITEM_RECEIVED = 'ITEM_RECEIVED';
+
+export const SET_CURRENCY = 'SET_CURRENCY';
+export const FETCH_CURRENCY_FAILED = 'FETCH_CURRENCY_FAILED';

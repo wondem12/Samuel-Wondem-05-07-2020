@@ -1,0 +1,20 @@
+.List {
+  &__top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    &--title {
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: var(--color-Title);
+      margin-right: 20px;
+    }
+  }
+  &__sum {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1.7rem;
+    font-size: 1.2rem;
+  }
+}

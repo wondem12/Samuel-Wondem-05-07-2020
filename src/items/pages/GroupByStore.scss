@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+.GroupByStore {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+
+    padding: 2.5rem 2.5rem;
+    margin: 5rem 4rem;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    border-radius: 5px;
+
+    &--top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      &--title {
+        font-size: 1.9rem;
+        color: var(--color-Title);
+      }
+    }
+  }
+}
